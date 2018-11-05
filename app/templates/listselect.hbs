@@ -1,0 +1,12 @@
+<h1> This is a list select </h1>
+
+
+
+    Selected: {{selected.value}}
+    <ul>
+    {{#each model as |item|}}
+      {{address-list value=item action="select"}}
+    {{/each}}
+    </ul>
+
+{{outlet}}
